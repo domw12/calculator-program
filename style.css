@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img.jpeg'); /* Chemin vers votre image */
+    background-size: cover; /* Pour couvrir tout le body */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Pas de répétition */
+    height: 100vh; /* Hauteur à 100% de la fenêtre visible */
+    margin: 0; /* Pour enlever la marge par défaut du body */
+    padding: 0; /* Pour enlever le padding par défaut du body */
+    font-family: Arial, sans-serif; /* Exemple de police de caractères */
+    /* Autres styles pour le contenu de votre page */
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+
+}
+
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);   
+}button:active{
+    background-color: hsl(0, 0%, 50%);
+
+}
+
+.operator-btn{
+    background-color: hsl(39, 100%, 55%);   
+}
+
+.operator-btn :hover{
+    background-color: hsl(39, 100%, 65%);   
+}
+
+.operator-btn :active{
+    background-color: hsl(39, 100%, 75%);   
+}
